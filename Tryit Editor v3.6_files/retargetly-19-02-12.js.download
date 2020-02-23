@@ -1,0 +1,24 @@
+(function(w){
+	try {
+		var r = /((lanacion\.com\.ar)|(ciudad\.com\.ar)|(cronica\.com\.ar)|(diariouno\.com\.ar)|(americatv\.com\.ar)|(cronicatv\.com\.ar)|(debate\.com\.mx)|(elheraldodechihuahua\.com\.mx)|(elheraldodetabasco\.com\.mx)|(elheraldodechiapas\.com\.mx)|(cooperativa\.cl)|(trome\.pe)|(elheraldo\.hn)|(cadena3\.com)|(primiciasya\.com)|(minutouno\.com)|(ambito\.com)|(perfil\.com)|(peru\.com)|(diarioregistrado\.com)|(minutouno\.com)|(cronista\.com)|(exitoina\.perfil\.com)|(la100\.cienradios\.com)|(radiomitre\.cienradios\.com)|(ar\.cienradios\.com)|(caras\.perfil\.com)|(442\.perfil\.com)|(m\.perfil\.com)|(parabrisas\.perfil\.com)|(gestion\.pe)|(elcomercio\.pe)|(perfil\.com)|(noticias\.perfil\.com)|(peru\.com)|(marieclaire\.perfil\.com)|(weekend\.perfil\.com)|(rouge\.perfil\.com)|(apertura\.com)|(salud360\.cienradios\.com)|(peladolopez\.cienradios\.com)|(libros\.cienradios\.com)|(planetavivo\.cienradios\.com)|(exitoina\.perfil\.com)|(depor\.com)|(marcelolongobardi\.cienradios\.com)|(turismo\.perfil\.com)|(lauradimarco\.cienradios\.com)|(jorgefernandezdiaz\.cienradios\.com)|(pablorossi\.cienradios\.com)|(radio\.perfil\.com))$/;
+		var d = w.document, s;
+		if(r.test(d.location.host)) {
+			(new Image()).src = "https://ads.us.e-planning.net/eb/3/2ca43/blacklist/retargetly?o=i&rnd=" + Math.random();
+		} else {
+			s = d.head.appendChild(d.createElement("script"));
+			w._rl_cn = w._rl_cn || 0;
+			w._rl_ptc = ("https:" == w.location.protocol ? "https" : "http");
+			w._rl_ids = w._rl_ids || [];
+			w._rely = w._rely || [];
+			w._rl_ids.push({pid:1473,src:0}); 
+			w._rely.send = w._rely.send
+				? w._rely.send
+				: (function(){});
+			s.id = "rely-api-" + (w._rl_cn++);
+			s.src =	w._rl_ptc + "://api.retargetly.com/loader?id=" + w._rl_ids[w._rl_ids.length - 1].pid;
+			(new Image()).src = "https://ads.us.e-planning.net/eb/3/2ca43/trackers/retargetly?o=i&rnd=" + Math.random();
+		}
+	} catch(e) {
+		(new Image()).src = "https://ads.us.e-planning.net/eb/3/2ca43/errors/retargetly?o=i&kw_error=" + encodeURIComponent(e.message) + "&rnd=" + Math.random();
+	}
+})(window.top)

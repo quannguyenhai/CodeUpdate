@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0026)https://www.w3schools.com/ -->
+<html lang="en-US" style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>W3Schools Online Web Tutorials</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="HTML,CSS,JavaScript,DOM,jQuery,PHP,SQL,XML,Python,Java,Bootstrap,Web,W3CSS,W3C,tutorials,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,colors,demos,tips,w3c">
+	<link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./hocCode_files/w3.css">
+	<link rel="stylesheet" crossorigin="anonymous" href="./hocCode_files/main.css">
+	<style>
+	/* W3Schools Font Logo */
+	.w3schools-logo {
+	font-family:fontawesome;
+	text-decoration:none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size:37px;
+	letter-spacing:3px;
+	color:#555555;
+	display:block;
+	position:relative;
+	}
+	.w3schools-logo .dotcom {color:#4CAF50;}
+	@font-face {
+	font-family:'fontawesome';
+	src:url('../lib/fonts/fontawesome.eot?14663396#iefix') format('embedded-opentype'),
+	url('../lib/fonts/fontawesome.woff?14663396') format('woff'),
+	url('../lib/fonts/fontawesome.ttf?14663396') format('truetype'),
+	url('../lib/fonts/fontawesome.svg?14663396#fontawesome') format('svg');
+	font-style:normal;
+	}
+	.fa {
+	display:inline-block;
+	font:normal normal normal 14px/1 FontAwesome;
+	font-size:20px;
+	text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	transform:translate(0,0);
+	}
+	.fa-home:before {content:'\e800';}
+	.fa-menu:before {content: '\f0c9';}
+	.fa-globe:before {content:'\e801';}
+	.fa-search:before {content:'\e802'; }
+	.fa-thumbs-o-up:before {content:'\e803';}
+	.fa-left-open:before {content:'\e804';}
+	.fa-right-open:before {content:'\e805';}
+	.fa-caret-down:before {content:'\e809';}
+	.fa-caret-up:before {content:'\e80a';}
+	/* Google */
+	#nav_translate, #nav_search {display:none;}
+	#nav_translate a {display:inline;}
+	#googleSearch {color:#000000;}
+	.searchdiv {
+	max-width:400px;
+	margin:auto;
+	text-align:left;
+	font-size:16px;
+	}
+	div.cse .gsc-control-cse, div.gsc-control-cse {
+	background-color:transparent;
+	border:none;
+	padding:0px;
+	margin:0px;
+	}
+	td.gsc-search-button input.gsc-search-button {background-color:#555555;border-color:#555555;}
+	input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button {
+	box-sizing:content-box;
+	line-height:normal;
+	}
+	.gsc-tabsArea div {overflow:visible;}
+	.gsst_a .gscb_a {margin-top:3px;}
+	/* Customize W3.CSS */
+	#nav_tutorials,#nav_references,#nav_examples,#nav_exercises {
+	display:none;
+	padding-bottom:40px;
+	position:absolute;
+	width:100%;
+	z-index:5 !important;
+	}
+	.w3-col .w3-button {
+	margin:5px 5px 5px 0;
+	font-size:16px;
+	}
+	.w3-col.l4 .w3-card-2 {
+	padding:15px 10px;
+	height:260px;
+	}
+	.w3-theme {color:#fff !important;background-color:#4CAF50 !important;}
+	.w3-main {margin-left:230px;}
+	.w3-sidebar {
+	z-index:3;
+	width:230px;
+	overflow:hidden !important;
+	position:absolute !important;
+	margin-bottom:-155px;
+	}
+	.w3-sidebar .w3-bar-block .w3-bar-item{
+	padding:0 16px;
+	font-size:16px; 
+	}
+	.w3-bar {
+	position:relative;
+	z-index:4;
+	font-size:17px;
+	}
+	.w3-wide {
+	font-family:"Segoe UI",Arial,sans-serif;
+	}
+	h1 {
+	font-size:80px;
+	color:#555555;
+	margin:2px 0 -20px 0 !important;
+	}
+	.certoverlay {
+	  position:absolute;
+	  top:0;
+	  background-color:rgba(0, 0, 0, 0.5);
+	  width:100%;
+	  text-align:center;
+	  padding:15px
+	}
+	.certoverlay h2 {
+	  margin:10px 0 0 0;
+	  font-size:36px;
+	}
+	.certoverlay h3 {
+	  margin:0 0 10px 0;
+	}
+
+	@media screen and (min-width:769px){.w3-sidebar.w3-collapse{display:block !important;}}
+	@media screen and (min-width:769px){#myAccordion,.hidesm{display:none !important;}}
+	@media screen and (min-width:769px){.w3-main{margin-left:230px !important;}.w3-bar-block .w3-button{padding:0;}}
+	@media screen and (max-width:768px){.w3-sidebar.w3-collapse,.barex,.navex{display:none !important;}.w3-bar-block .w3-bar-item{text-align:center !important;padding:2px 0;}h1,.w3-jumbo{font-size:60px !important;}}
+	@media screen and (max-width:545px){.certoverlay{padding:10px;height:100%;}.certoverlay h3{font-size:15px;}}
+	@media screen and (max-width:380px){.getcert{position:absolute;text-align:center;left:50%;bottom:50%;font-size:13px;}}
+	@media only screen and (max-device-width: 1366px){.w3-hide-device{display:none;}}
+	</style>
+
+	<script async="" type="text/javascript" src="./hocCode_files/snhb-w3schools.com.min.js.tải xuống"></script>
+	<!-- end cmp -->
+	<link type="text/css" rel="stylesheet" charset="UTF-8" href="./hocCode_files/translateelement.css">
+
+	</style></head>
+<body style="position: relative; min-height: 100%; top: 0px;">
+
+<div class="w3-row w3-white w3-padding w3-hide-medium w3-hide-small" style="margin-top:5px;">
+ <div class="w3-col s5 notranslate" style="margin:4px 0 6px 0">
+ 	<a class="w3schools-logo" href="https://www.w3schools.com/">IOT Development</span></a></div>
+ <div class="w3-col s7 w3-margin-top w3-wide w3-hide-medium w3-hide-small">
+  <div class="w3-right" style="position:relative;top:5px;">học lập trình thật là dễ</div>
+ </div>
+</div>
+
+<div class="w3-hide-large w3-hide-large w3-padding-16">
+ <div class="w3-center notranslate"><a class="w3schools-logo" href="https://www.w3schools.com/">w3schools<span class="dotcom">.com</span></a></div>
+ <div class="w3-center w3-wide w3-hide-small" style="margin:14px 0 -5px 0">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
+</div>
+
+
+
+<div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+ <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class="fa"></i></a>
+ <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav(&#39;tutorials&#39;)" id="navbtn_tutorials">TUTORIALS <i class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up" style="display:none"></i></a>
+ <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav(&#39;references&#39;)" id="navbtn_references">REFERENCES <i class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up" style="display:none"></i></a>
+ <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav(&#39;examples&#39;)" id="navbtn_examples">EXAMPLES <i class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up" style="display:none"></i></a>
+ <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small" href="javascript:void(0)" onclick="w3_open_nav(&#39;exercises&#39;)" id="navbtn_exercises">EXERCISES <i class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up" style="display:none"></i></a>
+  <div class="w3-right">
+  <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)" onclick="open_search(this)" title="Search W3Schools"><i class="fa"></i></a>
+  <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)" onclick="open_translate(this)" title="Translate W3Schools"><i class="fa"></i></a>
+</div>
+</div>
+
+<nav class="w3-sidebar w3-collapse w3-white w3-card-2" id="mySidenav">
+<div class="w3-bar-block">
+ <div class="w3-container">
+  <h4 class="w3-margin-top">HTML and CSS</h4>
+ </div>
+ <a class="w3-bar-item w3-button" onclick="onClickPage(1);" >Cài đặt IDE</a>
+ <a class="w3-bar-item w3-button" onclick="onClickPage(2);">Bài 1</a>
+ <a class="w3-bar-item w3-button" href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">Learn Bootstrap</a>
+ <a class="w3-bar-item w3-button" href="https://www.w3schools.com/w3css/default.asp">Learn W3.CSS</a>
+ <a class="w3-bar-item w3-button" href="https://www.w3schools.com/colors/default.asp">Learn Colors</a>
+ <a class="w3-bar-item w3-button" href="https://www.w3schools.com/icons/default.asp">Learn Icons</a>
+ <a class="w3-bar-item w3-button" href="https://www.w3schools.com/graphics/default.asp">Learn Graphics</a>
+ <a class="w3-bar-item w3-button" href="https://www.w3schools.com/howto/default.asp">Learn How To</a>
+ <a class="w3-bar-item w3-button" href="https://www.w3schools.com/sass/default.asp">Learn Sass</a> 
+
+</nav>
+
+<div id="myAccordion" class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default">
+ <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">×</a><br>
+ <div class="w3-container w3-padding-32">
+  <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu(&#39;tutorials&#39;);" href="javascript:void(0);">TUTORIALS <i class="fa fa-caret-down"></i></a>
+  <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
+  <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu(&#39;references&#39;)" href="javascript:void(0);">REFERENCES <i class="fa fa-caret-down"></i></a>
+  <div id="sectionxs_references" class="w3-white w3-show"></div>
+  <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu(&#39;examples&#39;)" href="javascript:void(0);">EXAMPLES <i class="fa fa-caret-down"></i></a>
+  <div id="sectionxs_examples" class="w3-white w3-show"></div>
+  <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu(&#39;exercises&#39;)" href="javascript:void(0);">EXERCISES <i class="fa fa-caret-down"></i></a>
+  <div id="sectionxs_exercises" class="w3-white w3-show"></div>
+ </div>
+</div>
+
+
+
+
+<!-- MAIN -->
+<div class="w3-main" id="main">
+
+	<iframe id="mainPage" src="Page\c++\caiDatIDE.html"  allowfullscreen
+    style="width:100%;height:1000px;" >
+		
+	</iframe>
+
+
+<!-- END MAIN -->
+</div>
+
+<script>
+
+
+function onClickPage(page){
+	if(page==2)
+		document.getElementById("mainPage").src = 'Page\\c++\\Bai1.html' ;
+	else if(page==1)
+		document.getElementById("mainPage").src = 'Page\\c++\\caiDatIDE.html' ;
+}
+
+function w3_close() {
+  document.getElementById("myAccordion").style.display = "none";
+}
+
+</script>
+<script src="./hocCode_files/w3codecolor.js.tải xuống"></script>
+<script src="./hocCode_files/f(1).txt"></script>
+<script>
+w3CodeColor();
+</script>
+
+</body></html>

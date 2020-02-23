@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<title>Cú pháp C++ cơ bản</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+	<div class="w3-container" id="#" style="margin-top:25px">
+	    <h1 class="w3-xlarge "><b>Cấu trúc chương trình C++</b></h1>
+	    <p>Bạn theo dõi một đoạn code đơn giản sẽ in Hello World.</p>
+	    <img src=".png" alt=".txt" height="#" width="#">
+	    <p>
+			Chương trình trên có các phần sau:
+			Ngôn ngữ C++ định nghĩa một số header, mà chứa tong tin cần thiết và hữu ích cho chương trình của bạn. Với chương trình này, header là <iostream> là cần thiết.
+			Dòng using namespace std; nói cho compiler sử dụng std namespace. Namespce là phần bổ sung gần đây cho C++.
+			Dòng tiếp theo Ham main() la noi su thuc thi chuong trinh bat dau là một comment đơn dòng trong C++. Các comment đơn dòng bắt đầu với // và kết thúc ở cuối dòng.
+			Dòng int main() là hàm main, tại đây việc thực thi chương trình bắt đầu.
+			Dòng tiếp theo cout << "Hello World"; để in dòng chữ "Hello World" trên màn hình.
+			Dòng tiếp theo return 0; kết thúc hàm main() và làm nó trả về giá trị 0 tới tiến trình đang gọi.
+		</p>
+	</div>
+
+	<div class="w3-container" id="#" style="margin-top:25px">
+	    <h1 class="w3-xlarge "><b>Biên dịch và thực thi chương trình C++</b></h1>
+	    <p> 1. Dưới đây là cách lưu file, biên dịch và chạy chương trình với command prompt. Bạn theo các bước sau:
+			Mở một text editor và thêm đoạn code trên.
+			Lưu file với tên: hello.cpp.
+			Mở một dòng nhắc lệnh (command prompt) và tới thư mục nơi bạn lưu file đó.
+			Soạn 'g++ hello.cpp ' và nhấn Enter để biên dịch code trên. Nếu không có lỗi xảy ra trong code của bạn thì dòng nhắc lệnh sẽ đưa bạn tới dòng tiếp theo và tạo a.out file có thể thực thi.
+			Bây giờ, bạn soạn 'a.out' để chạy chương trình.
+			Bạn sẽ thấy 'Hello World' được in trên cửa sổ. </p>
+
+	<p> 2. Đó là cách biên dịch và thực thi chương trình tại command prompt. Nếu bạn đang sử dụng 		Dev-C++, hoặc Microsoft Visual Studio, hoặc Turbo C++, bạn có thể sao chép ví dụ trên, sau đó:
+		Mở Dev-C++ chẳng hạn, chọn File -> New Source, sau đó dán ví dụ vào sourve file này và chọn Execute tab, chọn Complile & Run để thực thi chương trình. Bạn cũng có thể tạo một Project mới trong tùy chọn New để đặt tên và lưu cho ví dụ vừa thực hiện. </p>
+	</div>
+
+	<div class="w3-container" id="#" style="margin-top:25px">
+	    <h1 class="w3-xlarge "><b>Dấu chấm phảy và khối (block) trong C++</b></h1>
+	    <p>Trong C++, dấu chấm phảy là ký tự kết thúc lệnh (statement terminator). Nghĩa là, mỗi lệnh đơn phải kết thúc bởi một dấu chấm phảy. Nó chỉ dẫn sự kết thúc của một thực thể logic.</p>
+
+	</div>
+
+	<div class="w3-container" id="#" style="margin-top:25px">
+	    <h1 class="w3-xlarge "><b>Định danh (Identifier) trong C++</b></h1>
+	    <p>Một Định danh (Identifier) trong C++ là một tên được sử dụng để nhận diện một biến, hàm, lớp, module, hoặc bất kỳ user-defined item nào (người dùng tự định nghĩa). Một Định danh (Identifier) bắt đầu với một chữ cái từ A tới Z hoặc từ a tới z hoặc một dấu gạch dưới (_) được theo sau bởi 0 hoặc nhiều chữ cái, dấu gạch dưới và chữ số (từ 0 tới 9).</p>
+        <p>
+	    C++ không cho phép các ký tự như @, $ và % bên trong các Identifier. C++ là ngôn ngữ lập trình phân biệt kiểu chữ. Vì thế, Manpower và manpower là hai Identifier khác nhau trong C++.</p>
+
+	</div>
+
+	<div class="w3-container" id="#" style="margin-top:25px">
+	    <h1 class="w3-xlarge "><b>Từ khóa trong C++</b></h1>
+	    <p>Bảng dưới liệt kê các từ được dự trữ (dành riêng) trong C++. Những từ này không thể được sử dụng như là constant hoặc biến hoặc bất kỳ tên Identifier (Định danh) nào.</p>
+	    <img src=".png" alt=".txt" height="#" width="#">
+
+	</div>
+
+	<div class="w3-container" id="#" style="margin-top:25px">
+	    <h1 class="w3-xlarge "><b>Trigraph trong C++</b></h1>
+	    <p>Một Trigraph là một dãy 3 ký tự mà biểu diễn một ký tự đơn và dãy này luôn luôn bắt đầu với 2 dấu hỏi.
+		Các Trigraph được mở rộng bất cứ nơi đâu chúng xuất hiện, bao gồm bên trong String literal và Character literal, trong comment, và trong các preprocessor directive (các directive tiền xử lý).
+		Dưới đây là các dãy trigraph được sử dụng thường xuyên nhất:</p>
+	</div>
+
+	<div class="w3-container" id="#" style="margin-top:25px">
+	    <h1 class="w3-xlarge "><b>Khoảng trắng (Whitespace) trong C++</b></h1>
+	    <p>Một dòng mà chỉ chứa khoảng trắng (Whitespace), có thể là một comment, được biết đến như là một dòng trống, và C++ hoàn toàn bỏ qua nó.
+		Khoảng trắng (Whitespace) là khái niệm được sử dụng trong C++ để miêu tả blank, tab, ký tự newline (dòng mới), và comment. Khoảng trắng (Whitespace) phân biệt các phần của lệnh và giúp compiler nhận diện vị trí một phần tử trong một lệnh, ví dụ như int, vị trí phần kết thúc và vị trí phần tử tiếp theo bắt đầu. Do đó, trong lệnh sau:</p>
+	</div>
+
+</body>
+</html>

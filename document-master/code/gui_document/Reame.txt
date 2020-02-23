@@ -1,0 +1,13 @@
+Cấu trúc
+hocCode.html
+	+Page
+		* page1
+		* page2
+		......
+		* pagen
+	
+	 + Image
+file hocCode.html là file chính 
+page1 ,page2 ... pagen là file Html phụ
+hocCode.html có thể gọi page1 ,page2 ... pagen qua phương thức iframe
+  https://www.w3schools.com/html/html_iframe.asp

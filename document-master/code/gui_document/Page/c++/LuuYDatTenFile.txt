@@ -1,0 +1,10 @@
+Luy y khi dat ten file trong HTML
+1/ Dat ten bang tieng Anh
+Cu phap: Cpp+(tinh tu-neu co)+danh tu(so it, so nhieu)
+
+VD: Cac kieu bien trong Cpp--> CppVariables.html
+
+2/ Bat dau bang chu cai in hoa tai cac tu
+
+VD: CppExceptionHanding.html
+( Viet in hoa chu C, E, H)
